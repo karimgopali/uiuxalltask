@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+         *{
+           margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .nav {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-content: center;
+            background-color: #fff;
+            z-index: 1000;
+        }
+        .nav{
+            position: sticky;
+            display: flex;
+            top: 0;
+        }
+        .navlinks ul {
+            display: flex;
+            text-align: center;
+            list-style-type: none;
+            gap: 20px;
+            margin-right: 100px;
+        }
+        .banner{
+                background: url("https://images.pexels.com/photos/21033251/pexels-photo-21033251.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.4000000059604645&h=500&w=1500");
+                height: 600px;
+                text-align: center;
+                align-content: center;
+                font-size: 2rem;
+                color: white;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+        }
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+ 
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+      
+        .nav2 {
+            font-size: 20px;
+            text-align: center;
+           
+        }
+        .navlinks2 ul {
+            display: flex;
+            text-align: center;
+            list-style-type: none;
+            gap: 20px;
+        }
+        .photos{
+            align-content: center;
+            padding: 80px;
+            justify-content: space-between;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+        .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="nav">
+                <div class="logo" style=" margin-left: 2%;">
+                    <h2 style="padding: 20px; background-color: #00B4CC; border-radius: 12px; margin-bottom: 10%; margin-top: 6%;">Pexels</h2>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li style="padding: 10px; margin-top: 8%;">Explore</li>
+                        <li style="padding: 10px; margin-top: 8%;">License</li>
+                        <li style="padding: 10px; margin-top: 8%;">Upload</li>
+                        <li style="padding: 20px; background-color: #00B4CC; border-radius: 12px; margin-bottom: 5%; margin-top: 5%;">Join</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                The best free stock photos, royalty free images & videos shared by creators.
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="navlinks2" style=" display: block; margin-top: 10px; margin-bottom: 10PX; gap: 20; padding: 40px 0px; text-align: center; margin-left: 40%; margin-right: 60%;">
+                    <ul style="align-items: center; text-align: center;">
+                        <li><a href="Home" style="text-decoration: none;background-color: #00b4cc; padding: 10px; color: #fff; border-radius: 20px;">Home</a></li>
+                        <li>Video</li>
+                        <li>Leaderboard</li>
+                        <li>Challenges</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../1.avif">
+                <img src="../3.avif">
+                <img src="../4.avif">
+                <img src="../5.jpg">
+                <img src="../6.png">
+               
+            </div>
+            <div class="column">
+                <img src="../9.webp">
+                <img src="../1.avif">
+                <img src="../2.avif">
+                <img src="../3.avif">
+                <img src="../4.avif">
+                
+            </div>
+            <div class="column">
+                <img src="../1.avif">
+                <img src="../2.avif">
+                <img src="../3.avif">
+                <img src="../5.jpg">
+                <img src="../6.png">
+              
+                
+            </div>
+            <div class="column">
+                <img src="../4.avif">
+                <img src="../1.avif">
+                <img src="../2.avif">
+                <img src="../3.avif">
+                <img src="../9.webp">
+            </div>
+        </body>
+    </html>

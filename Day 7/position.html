@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid rebeccapurple;
+            height: 800px;
+            width: 600px;
+            position: relative;
+        }
+        .minibox{
+            height: 150px;
+            width: 150px;
+            border: 2px solid rebeccapurple;
+            text-align: center;
+            align-content: center;
+            font-size: 2rem;
+        }
+        #mini1{
+            position: static;
+            margin-top: 3rem;
+        }
+        #mini2{
+            position: relative;
+            top: 3rem;
+            background-color: blueviolet;
+            z-index: -1;
+        }
+        #mini3{
+            top: 0;
+            right:0;
+            position: absolute;
+            background-color: aquamarine;
+            z-index: -2;
+        }
+        #mini4{
+            position: fixed;
+            /* top: 3rem; */
+
+            background-color: blue;
+            /* z-index: 1; */
+            bottom: 1rem;
+            right: 1rem;
+        }
+        #mini5{
+            z-index: 3;
+            background-color: brown;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <h1>position types:</h1>
+    <ol>
+        <li>static(default position)</li>
+        <li>relative(own position)</li>
+        <li>absolute(relative parent)</li>
+        <li>fixed(scroll)</li>
+        <li>sticky(scroll)</li>
+    </ol>
+    <!-- ctrl+shift+l 
+    ctrl+d -->
+
+    <div class="box">
+        <div class="minibox" id="mini1">static</div>
+        <div class="minibox" id="mini2">relative</div>
+        <div class="minibox" id="mini3">absolute</div>
+        <div class="minibox" id="mini4">fixed</div>
+        <div class="minibox" id="mini5">sticky</div>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            overflow-x: hidden;
+            margin: 0;
+        }
+        body {
+            
+            display: flex;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+        }
+        .parent {
+            width: 15vw;
+            background-color: #405189;
+            color: white;
+            padding: 20px 10px;
+            font-size: 30px;
+        }
+        .child {
+            font-size: 22px;
+            margin-left: 5px;
+            margin-top: 20px;
+        }
+        .child1 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .divider {
+            margin: 15px 0;
+            border: 0;
+            border-top: 1px solid white;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .nav {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            z-index: 1000;
+            width: 100%;
+        }
+        .nav1{
+            margin-left: 1000px;
+            padding: 5px;
+        }
+        .container {
+            flex-direction: row;
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            padding-top: 20px;
+        }
+        .box{
+            font-size: 18px;
+            padding: 20px;
+            gap: 20px;
+            border: 1px solid gray;
+            box-shadow: 4px 20px 9px 0px rgb(131, 121, 121);
+        }
+        .Revenue{
+            margin-top: 20px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .icon-right{
+            float: right;
+            padding: 0 10px ;
+           
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <b><center>Velzon</center></b><br>
+        <div class="child"><b>MENU</b></div>
+        <hr class="divider">
+        <div class="child1"><i class="fa-solid fa-house"></i> Dashboard</div>
+        <div class="child1"><i class="fa-regular fa-image"></i> Apps</div>
+        <div class="child1"><i class="fa-solid fa-image"></i> Layouts</div><br>
+        <div class="child"><b>PAGES</b></div>
+        <hr class="divider">
+        <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+        <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+        <div class="child1"><i class="fa-solid fa-ghost"></i> Landing</div><br>
+        <div class="child"><b>COMPONENTS</b></div>
+        <hr class="divider">
+        <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+        <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+        <div class="child1"><i class="fa-solid fa-ghost"></i> Search</div>
+        <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+        <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+        <div class="child1"><i class="fa-solid fa-ghost"></i> Landing</div>
+    </div>
+    <div class="main-content">
+        <div class="nav">
+
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-star icon-right" style="margin-right:100px;"></i>
+                <i class="fa-solid fa-clipboard icon-right"></i>
+                <i class="fa-solid fa-ghost icon-right"></i>
+            <div>        
+        </div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between;" >
+            <div>
+            <h1 style="padding: 10px 0px;">Good morning</h1>
+            <h4>Karim</h4>
+            <hr style="width: 250px;">
+            <br>
+            <div class="container">
+                <div class="box">TOTAL EARNINGS <br> <br><br>$ 4000</div>
+                <div class="box">ORDERS <br> <br><br>45 ORDERS</div>
+                <div class="box">CUSTOMERS<br> <br><br>400</div>
+                <div class="box">MY BALANCE <br> <br><br>$ 3,400</div>
+                </div>  <br> 
+
+                <div class="Revenue"><h1 style="padding: 10px 0px;">Revenue</h1> <br>
+                    <div class="" style="gap: 30px; border: 0px; box-shadow: none; display: flex; flex-direction: row; padding: 20px 20px;">
+                        <div style="border-right:1px solid ;margin-right: 20px; padding: 0px 15px ;">EARNINGS <br> <br><br>$2,300</div>
+                        <div style="border-right:1px solid ;margin-right: 20px; padding: 0px 15px ;">SALES <br> <br><br>68  </div>
+                        <div style="border-right:1px solid ;margin-right: 20px; padding: 0px 15px ;">ORDERS<br> <br><br> 400</div>
+                        <div style="border-right:1px solid ;margin-right: 20px; padding: 0px 15px ;">MY BALANCE <br> <br><br>$ 3,400 </div>
+                        </div>
+                    
+                    <img src="/R3.jpg" alt="" height="400px" width="100%">
+                </div> 
+            </div>
+            <div>
+                <div class="Revenue"><h1 style="padding: 10px 0px;">Sales</h1> <br>
+                    <img src="../Sales-101-2.jpg" alt="" height="auto" width="400px">
+                </div> <br><br>
+                <div class="Revenue"><h1 style="padding: 10px 0px;">Location</h1> <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5941.160657689533!2d85.2115264455901!3d27.69766579810802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb230e5479efb1%3A0xa28ed7f729030fd3!2sThankot%2C%20Chandragiri!5e0!3m2!1sen!2snp!4v1731953200263!5m2!1sen!2snp" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+            <div class="parent" style="float: right; background-color: #f4f4f9; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 20px; color: black;">
+                <div class="" style="text-align: justify;">
+                <div class="child1"><i class="fa-solid fa-house"></i> Dashboard</div>
+                <div class="child1"><i class="fa-regular fa-image"></i> Apps</div>
+                <div class="child1"><i class="fa-solid fa-image"></i> Layouts</div>
+        
+      
+                <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+                <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+                <div class="child1"><i class="fa-solid fa-ghost"></i> Landing</div>
+        
+       
+                <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+                <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+                <div class="child1"><i class="fa-solid fa-ghost"></i> Search</div>
+                <div class="child1"><i class="fa-solid fa-star"></i> Authentications</div>
+                <div class="child1"><i class="fa-solid fa-clipboard"></i> Page</div>
+                <div class="child1"><i class="fa-solid fa-ghost"></i> Landing</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
