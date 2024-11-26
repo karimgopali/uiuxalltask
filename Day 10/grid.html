@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid;
+            display: grid;
+
+            height: 200px;
+
+            /* grid-template-columns: 150px 150px 150px 150px; */
+            grid-template-columns: 50px 50px 50px 50px;
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-columns: repeat(10,auto); */
+
+            /* grid-template-rows: repeat(10,auto); */
+            /* grid-template-rows: 150px 150px; */
+
+
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+
+            /* justify-items: center; */
+            /* justify-items: end; */
+            /* justify-items: start; */
+
+
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+
+            /* justify-content: center; */
+            /* justify-content: end; */
+
+
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content:space-evenly ; */
+
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content: start; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+
+        }
+        .class{
+            border: 2px solid rebeccapurple;
+            /* height: 50px; */
+            /* width: 50px; */
+           
+        }
+        #child1{
+            /* align-self: center; */
+            justify-self:start;
+            grid-row: 1/3;
+            background:blue;
+        }
+        #child2{
+            /* grid-column-start: 2;
+            grid-column-end: 5; */
+            grid-column: 2/5;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="class" id="child1">1</div>
+        <div class="class" id="child2">2</div>
+        <div class="class" id="child3">3</div>
+        <div class="class" id="4">4</div>
+        <div class="class" id="5">5</div>
+        <div class="class" id="6">6</div>
+        <div class="class" id="7">7</div>
+        <div class="class" id="8">8</div>
+
+    </div>
+    
+</body>
+</html>
